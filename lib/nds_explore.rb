@@ -14,5 +14,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  
+   module Kernel
+      alias :pp :original_pp
+    end
 end
